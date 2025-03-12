@@ -1,0 +1,272 @@
+/* Custom styling for the navbar if needed */
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensure the navbar stays on top */
+}
+
+        /* Navbar Link Hover Effect */
+        .navbar-nav .nav-link:hover {
+            background-color: #555;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Dropdown Item Hover Effect */
+        .dropdown-item:hover {
+            background-color: #f1f1f1;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Categories Dropdown Toggle Hover Effect */
+        .navbar-nav .nav-item.dropdown:hover .nav-link {
+            background-color: #444;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Search Bar Hover Effect */
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        /* Button Hover Effect */
+        .btn-outline-light:hover {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+
+
+
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-item a {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    width: 250px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Additional styling for the main content */
+main {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    background-color: #444;
+    color: white;
+    transition: background-color 0.3s ease;
+    position:fixed;
+    top:0px;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-outline-light:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+
+
+
+
+
+/* Ensure the dropdown button has relative positioning */
+.dropdown {
+    position: relative;
+}
+
+/* Set the dropdown menu to have a higher z-index and position it correctly */
+.dropdown-menu {
+    position: absolute;
+    z-index: 1050; /* Higher z-index to make sure it appears above other elements */
+}
+
+
+/* Custom CSS for Icon Styling */
+.icon-size {
+    font-size: 3rem; /* Increase icon size */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Hover effect for rotating icons */
+.icon-size:hover {
+    transform: rotate(360deg); /* Rotate the icon when hovered */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+/* Icon size and alignment */
+.icon-size {
+    font-size: 6rem; /* Adjust the icon size */
+    display: block;
+    margin: 0 auto 10px; /* Centers the icon horizontally and adds space below it */
+}
+
+
+/* Card title and icon alignment */
+.card-title {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center the icon and text horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center; /* Ensure the text is centered under the icon */
+}
+
+/* Card body layout */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    height: 200px; /* Adjust the height to fit the content */
+}
+
+/* Flexbox for button centering */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center; /* Center the content horizontally */
+}
+
+.align-items-center {
+    align-items: center; /* Center the content vertically */
+}
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+.social-media a {
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #007bff;
+}
+
+/* Ensure footer layout adjusts on smaller screens */
+@media (max-width: 768px) {
+    footer h5 {
+        font-size: 16px;
+    }
+    
+    footer ul li {
+        margin-bottom: 8px;
+    }
+    
+    .social-media a {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
+
+/* Further adjustments for very small screens (phones) */
+@media (max-width: 576px) {
+    footer h5 {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
